@@ -138,7 +138,7 @@ $(document).ready(function () {
         }
     });
 
-    // OOTD INDEX CLICK PREVIEW
+    // OOTD PAGE CLICK PREVIEW
     $("main > .ootd > .container > .ootd-posts > a > figure").on("click", function () {
         let image_source = $(this).find("img").attr("src");
         let image_alt = $(this).find("img").attr("alt");
