@@ -137,4 +137,14 @@ $(document).ready(function () {
             $(".ootd > .container > .ootd-posts > a").not("[data-weather='"+ $(this).attr("data-filter") +"']").css("display", "none");
         }
     });
+
+    // OOTD INDEX CLICK PREVIEW
+    $("main > .ootd > .container > .ootd-posts > a > figure").on("click", function () {
+        let image_source = $(this).find("img").attr("src");
+        let image_alt = $(this).find("img").attr("alt");
+        $(".preview-image").attr("src", image_source);
+        $(".preview-image").attr("alt", image_alt);
+        $(".image-preview").css("display", "block");
+        $(".image-preview > .container").css("display", "flex");
+    });
 });

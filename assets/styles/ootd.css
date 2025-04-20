@@ -42,7 +42,6 @@ main > .ootd > .container > .filters {
 
 main > .ootd > .container > .filters > button {
     font-family: "Instrument-Sans";
-    font-weight: 600;
     padding: 15px 50px;
     border-radius: 10px;
     border: 0;
@@ -76,6 +75,7 @@ main > .ootd > .container > .ootd-posts {
 }
 
 main > .ootd > .container > .ootd-posts > a {
+    cursor: pointer;
     width: 50%;
     box-sizing: border-box;
 }
@@ -88,6 +88,12 @@ main > .ootd > .container > .ootd-posts > a > figure > img {
     height: 300px;
     object-fit: cover;
     width: 100%;
+    filter: brightness(100%);
+    transition: all 0.5s ease-out;
+}
+
+main > .ootd > .container > .ootd-posts > a:hover > figure > img {
+    filter: brightness(70%);
 }
 
 main > .ootd > .container > .ootd-posts > a > figure > figcaption {
@@ -110,6 +116,40 @@ main > .ootd > .container > .ootd-posts > a > p {
     font-size: 14px;
     font-weight: 100;
     margin: 0;
+}
+
+.image-preview {
+    display: none;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100vw; 
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 999;
+}
+
+.image-preview > .container {
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.image-preview > .container > img {
+    align-self: center;
+}
+
+.image-preview > .container > button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    align-self: flex-end;
+    position: absolute;
+    top: 20px;
+}
+
+.image-preview > .container > button > img {
+    height: 20px;
 }
 /* END OOTD CSS */
 

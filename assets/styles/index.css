@@ -208,8 +208,8 @@ main > .blog > .container > .blog-posts > .blog-item > a > figure > img {
 
 main > .blog > .container > .blog-posts > .blog-item > a > figure > .overlay {
     display: flex;
-    align-self: center;
-    justify-self: center;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -225,7 +225,7 @@ main > .blog > .container > .blog-posts > .blog-item > a > figure > .overlay::af
     color: #ffffff;
     font-size: 30px;
     position: relative;
-    top: -13px;
+    top: -5px;
     padding-left: 5px;
 }
 

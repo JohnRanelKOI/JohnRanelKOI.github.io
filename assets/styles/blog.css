@@ -104,7 +104,6 @@ main > .blog > .container > .filters {
 
 main > .blog > .container > .filters > button {
     font-family: "Instrument-Sans";
-    font-weight: 600;
     padding: 15px 50px;
     border-radius: 10px;
     border: 0;
@@ -132,8 +131,8 @@ main > .blog > .container > .filters > button:nth-child(5) {
 
 main > .blog > .container > .blog-posts > article > a > figure > .overlay {
     display: flex;
-    align-self: center;
-    justify-self: center;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -149,7 +148,7 @@ main > .blog > .container > .blog-posts > article > a > figure > .overlay::after
     color: #ffffff;
     font-size: 30px;
     position: relative;
-    top: -13px;
+    top: -5px;
     padding-left: 5px;
 }
 
